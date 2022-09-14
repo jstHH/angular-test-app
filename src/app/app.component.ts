@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test-app';
+  pageSelected: string = 'recipes';
+
+  onPageChanged(page: string) {
+    this.pageSelected = page;
+  }
 }
