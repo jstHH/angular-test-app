@@ -10,6 +10,7 @@ import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import {RecipesComponent} from "./recipes/recipes.component";
 import {ShoppingComponent} from "./shopping/shopping.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ShoppingComponent} from "./shopping/shopping.component";
     ShoppingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

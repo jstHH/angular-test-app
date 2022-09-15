@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import {Recipe} from "./recipe.model";
 
 
 @Component({
@@ -8,5 +9,11 @@ import {Component} from "@angular/core";
 })
 
 export class RecipesComponent {
+  // @ts-ignore
+  selectedRecipe: Recipe;
+
+  onRecipeSelected(selectedRecipe: Recipe) {
+    this.selectedRecipe = selectedRecipe;
+  }
 
 }
